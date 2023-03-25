@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "5b8bcb29-8f65-4f0f-b386-81b58f509d06",
+		"name": "curp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15246888"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:3000/curp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"curp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/curp/guse971031hjctnm04",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"curp",
+						"guse971031hjctnm04"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"curp\": \"guse971031hjctnm06\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/curp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"curp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put one",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"curp\":\"GUSE971031HJCTNM08\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/curp/6417d3abe21edb76db217900",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"curp",
+						"6417d3abe21edb76db217900"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete one",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/curp/6417d3abe21edb76db217900",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"curp",
+						"6417d3abe21edb76db217900"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
